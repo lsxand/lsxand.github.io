@@ -316,10 +316,11 @@ nav a.home {
     color: var(--white);
     text-shadow: 0 0 10px var(--cyan);
     margin-left: 0;
-    
+
     span {
         color: var(--cyan);
     }
+
     a {
         color: var(--white);
     }
@@ -603,6 +604,13 @@ nav a.home {
     div {
         margin: 0;
         padding: 0;
+        /* display: flex; */
+        img {
+            background-color: var(--cyan);
+            width: 2vw;
+            padding: 0.5rem;
+            border-radius: 5px;
+        }
 
         p {
             margin: 0;
