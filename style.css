@@ -681,11 +681,13 @@ nav a.home {
         flex-direction: row;
         justify-content: space-between;
 
-        img {
-            background-color: var(--cyan);
-            width: 2vw;
-            padding: 0.5rem;
-            border-radius: 5px;
+        div {
+            img {
+                background-color: var(--cyan);
+                width: 2vw;
+                padding: 0.5rem;
+                border-radius: 5px;
+            }
         }
     }
 }
