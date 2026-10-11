@@ -197,11 +197,6 @@ footer {
     padding: 0.2rem 0.6rem;
     cursor: pointer;
     transition: color 0.35s ease, text-shadow 0.35s ease;
-
-    span {
-        color: var(--cyan);
-    }
-
 }
 
 .contact-btn::before,
@@ -450,42 +445,36 @@ nav a.home {
     border: 2px solid var(--cyan-transparent);
     display: flex;
     justify-content: center;
-    border-radius: 5px;
+    border-radius: 15px;
     min-width: 40%;
-
-    /* padding: 0; */
-    /* margin-left: 2rem; */
+    text-transform: uppercase;
+    padding: 0 1rem;
+    margin: 1rem;
+    font-size: 0.5rem;
 
     p {
-        word-spacing: 2rem;
+        word-spacing: 0.5rem;
     }
 
-    /* .modal {
-        display: none;
-        position: fixed;
-        z-index: 1000;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
+    span {
+        color: var(--cyan);
+    }
+}
+
+.lf:hover {
+    transition: 2s 2px ease;
+    transform: translateY(-5px);
+    border: 3px solid var(--cyan);
+    box-shadow: 0 0 15px 1px var(--cyan);
+    border-radius: 15px;
+
+    p {
+        color: var(--white);
     }
 
-    .modal-content {
-        background-color: var(--black-lighten);
-        margin: 15% auto;
-        padding: 20px;
-        border-radius: 5px;
-        width: 50%;
-        position: relative;
+    span {
+        -webkit-text-stroke: 1px var(--cyan);
     }
-
-    .close-btn {
-        position: absolute;
-        top: 10px;
-        right: 15px;
-        font-size: 24px;
-        cursor: pointer;
-    } */
 }
 
 /*  ################# SECTION SKILLS ################## */
@@ -619,210 +608,212 @@ nav a.home {
     }
 }
 
-/* =====================================================
+    /* =====================================================
    TABLETTE  (>= 768px)
    ===================================================== */
-@media screen and (min-width: 768px) {
+    @media screen and (min-width: 768px) {
 
-    header {
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 2rem 2rem 2rem 0;
+        header {
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 2rem 2rem 2rem 0;
 
-        nav a {
-            margin: 0.25rem 0.75rem;
-        }
-    }
-
-    .logo {
-        font-size: 1.3rem;
-    }
-
-    h1 {
-        font-size: 3.5rem;
-    }
-
-    h2 {
-        font-size: 2rem;
-    }
-
-    p,
-    li {
-        font-size: 1.2rem;
-    }
-
-    #hero,
-    #about,
-    #path,
-    #skills,
-    #contact {
-        padding: 3rem;
-    }
-
-    #hero-version {
-        font-size: 1.6rem;
-    }
-
-    .path-content {
-        grid-template-columns: 1fr 1fr;
-    }
-
-    #contact form {
-        padding: 2rem;
-        margin: 2rem 0;
-
-        input,
-        textarea {
-            margin: 1.5rem;
-        }
-    }
-
-    .contact-information {
-        flex-direction: row;
-        justify-content: space-between;
-
-        div {
-            img {
-                background-color: var(--cyan);
-                width: 2vw;
-                padding: 0.5rem;
-                border-radius: 5px;
+            nav a {
+                margin: 0.25rem 0.75rem;
             }
         }
-    }
-}
 
-/* =====================================================
-   DESKTOP  (>= 1024px)
-   ===================================================== */
-@media screen and (min-width: 1024px) {
-
-    header {
-        nav {
-            margin-right: 4rem;
+        .logo {
+            font-size: 1.3rem;
+            margin-left: 3rem;
         }
-    }
 
-    .logo {
-        font-size: 1.4rem;
-        margin-left: 5rem;
-    }
-
-    h1 {
-        font-size: 4rem;
-    }
-
-    #hero,
-    #about,
-    #path,
-    #skills,
-    #contact,
-    #projects {
-        padding: 5rem;
-    }
-
-    #hero {
-        flex-direction: row;
-        gap: 0;
-        justify-content: space-between;
-
-        p {
-            max-width: 65vw;
+        h1 {
+            font-size: 3.5rem;
         }
-    }
 
-    #hero-version {
-        font-size: 2rem;
-    }
-
-    #about {
-        margin-top: 15vh;
-
-        img {
-            max-width: 20vw;
-        }
-    }
-
-    .about-pp {
-        flex-direction: row;
-        justify-content: space-between;
-
-        .img-container {
-            max-height: 60vh;
-        }
-    }
-
-    .professional-goal {
-        max-height: 50vh;
-
-        h3 {
-            font-size: 5vh;
-        }
-    }
-
-    .path-structure {
-        padding: 2rem;
-
-        h3 {
+        h2 {
             font-size: 2rem;
         }
-    }
 
-    .path-content {
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 0;
-
-        article {
-            max-width: 25vw;
-            margin-top: 2rem;
+        p,
+        li {
+            font-size: 1.2rem;
         }
-    }
 
-    #projects {
-        ul {
-            flex-wrap: wrap;
+        #hero,
+        #about,
+        #path,
+        #projects,
+        #skills,
+        #contact {
+            padding: 3rem;
         }
-    }
 
-    .lf {
-        margin-left: 10rem;
-    }
-
-    #skills .skills-section {
-        flex-direction: row;
-        flex-wrap: wrap;
-        gap: 0;
-
-        article {
-            margin: 2rem;
-            max-width: 50%;
+        #hero-version {
+            font-size: 1.6rem;
         }
-    }
 
-    .contact-content {
-        flex-direction: row;
-        justify-content: space-between;
-    }
+        .path-content {
+            grid-template-columns: 1fr 1fr;
+        }
 
-    #contact form {
-        min-width: 50%;
-        margin: 2rem;
-    }
+        #contact form {
+            padding: 2rem;
+            margin: 2rem 0;
 
-    .contact-information {
-        flex-direction: column;
-        justify-content: space-around;
-        /* align-items: center; */
-        min-width: 50%;
-        padding: 2rem;
+            input,
+            textarea {
+                margin: 1.5rem;
+            }
+        }
 
-        div {
-            img {
-                background-color: var(--cyan);
-                width: 2vw;
-                padding: 0.5rem;
-                border-radius: 5px;
+        .contact-information {
+            flex-direction: row;
+            justify-content: space-between;
+
+            div {
+                img {
+                    background-color: var(--cyan);
+                    width: 2vw;
+                    padding: 0.5rem;
+                    border-radius: 5px;
+                }
             }
         }
     }
-}
+
+    /* =====================================================
+   DESKTOP  (>= 1024px)
+   ===================================================== */
+    @media screen and (min-width: 1024px) {
+
+        header {
+            nav {
+                margin-right: 4rem;
+            }
+        }
+
+        .logo {
+            font-size: 1.4rem;
+            margin-left: 5rem;
+        }
+
+        h1 {
+            font-size: 4rem;
+        }
+
+        #hero,
+        #about,
+        #path,
+        #skills,
+        #contact,
+        #projects {
+            padding: 5rem;
+        }
+
+        #hero {
+            flex-direction: row;
+            gap: 0;
+            justify-content: space-between;
+
+            p {
+                max-width: 65vw;
+            }
+        }
+
+        #hero-version {
+            font-size: 2rem;
+        }
+
+        #about {
+            margin-top: 15vh;
+
+            img {
+                max-width: 20vw;
+            }
+        }
+
+        .about-pp {
+            flex-direction: row;
+            justify-content: space-between;
+
+            .img-container {
+                max-height: 60vh;
+            }
+        }
+
+        .professional-goal {
+            max-height: 50vh;
+
+            h3 {
+                font-size: 5vh;
+            }
+        }
+
+        .path-structure {
+            padding: 2rem;
+
+            h3 {
+                font-size: 2rem;
+            }
+        }
+
+        .path-content {
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 0;
+
+            article {
+                max-width: 25vw;
+                margin-top: 2rem;
+            }
+        }
+
+        #projects {
+            ul {
+                flex-wrap: wrap;
+            }
+        }
+
+        .lf {
+            margin-left: 10rem;
+        }
+
+        #skills .skills-section {
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap: 0;
+
+            article {
+                margin: 2rem;
+                max-width: 50%;
+            }
+        }
+
+        .contact-content {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        #contact form {
+            min-width: 50%;
+            margin: 2rem;
+        }
+
+        .contact-information {
+            flex-direction: column;
+            justify-content: space-around;
+            /* align-items: center; */
+            min-width: 50%;
+            padding: 2rem;
+
+            div {
+                img {
+                    background-color: var(--cyan);
+                    width: 2vw;
+                    padding: 0.5rem;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
