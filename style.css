@@ -650,8 +650,9 @@ nav a.home {
             padding: 3rem;
         }
 
-        #hero-version {
+        .hero-version {
             font-size: 1.6rem;
+            text-transform: uppercase;
         }
 
         .path-content {
