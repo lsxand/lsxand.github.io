@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 100" width="100%" height="100%">
+  <defs>
+    <style>
+      .bg { fill: #fcfcfc; }
+      .text-jobboard {
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        font-weight: 800;
+        font-size: 34px;
+        fill: #003366;
+      }
+    </style>
+  </defs>
+  
+  <!-- Arrière-plan -->
+  <rect width="300" height="100" class="bg" />
+
+  <!-- Groupe centré (Mallette + Texte JobBoard) -->
+  <g transform="translate(42, 32)">
+    <!-- Icône Mallette -->
+    <g transform="translate(0, 3)">
+      <!-- Corps de la mallette -->
+      <rect x="0" y="8" width="36" height="24" rx="4" fill="#8B4513" />
+      <!-- Rabat supérieur -->
+      <path d="M 0,12 Q 18,17 36,12 L 36,8 C 36,5.8 34.2,4 32,4 L 4,4 C 1.8,4 0,5.8 0,8 Z" fill="#6B340E" />
+      <!-- Poignée -->
+      <path d="M 12,4 L 12,2 C 12,0.9 12.9,0 14,0 L 22,0 C 23.1,0 24,0.9 24,2 L 24,4" fill="none" stroke="#6B340E" stroke-width="2.5" stroke-linecap="round" />
+      <!-- Ligne de fermeture -->
+      <line x1="0" y1="16" x2="36" y2="16" stroke="#52270A" stroke-width="1" />
+      <!-- Fermoir doré -->
+      <rect x="16" y="14" width="4" height="5" rx="0.5" fill="#D4AF37" />
+    </g>
+
+    <!-- Texte JobBoard -->
+    <text x="48" y="31" class="text-jobboard">JobBoard</text>
+  </g>
+</svg>

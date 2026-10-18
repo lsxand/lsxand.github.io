@@ -66,6 +66,10 @@ body {
     font-family: var(--font-text);
     display: block;
     position: relative;
+
+    section {
+        min-height: 60vh;
+    }
 }
 
 body:after {
@@ -429,11 +433,12 @@ nav a.home {
     }
 }
 
-/*  ################# SECTION SKILLS ################## */
+/*  ################# SECTION PROJECTS ################## */
 #projects {
     padding: 2rem;
 
     ul {
+        margin-top: 6rem;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -467,6 +472,8 @@ nav a.home {
     border: 3px solid var(--cyan);
     box-shadow: 0 0 15px 1px var(--cyan);
     border-radius: 15px;
+
+
 
     p {
         color: var(--white);
@@ -608,213 +615,294 @@ nav a.home {
     }
 }
 
-    /* =====================================================
+/* =====================================================
    TABLETTE  (>= 768px)
    ===================================================== */
-    @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
 
-        header {
-            flex-direction: row;
-            justify-content: space-between;
-            padding: 2rem 2rem 2rem 0;
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 2rem 2rem 2rem 0;
 
-            nav a {
-                margin: 0.25rem 0.75rem;
-            }
-        }
-
-        .logo {
-            font-size: 1.3rem;
-            margin-left: 3rem;
-        }
-
-        h1 {
-            font-size: 3.5rem;
-        }
-
-        h2 {
-            font-size: 2rem;
-        }
-
-        p,
-        li {
-            font-size: 1.2rem;
-        }
-
-        #hero,
-        #about,
-        #path,
-        #projects,
-        #skills,
-        #contact {
-            padding: 3rem;
-        }
-
-        .hero-version {
-            font-size: 1.6rem;
-            text-transform: uppercase;
-        }
-
-        .path-content {
-            grid-template-columns: 1fr 1fr;
-        }
-
-        #contact form {
-            padding: 2rem;
-            margin: 2rem 0;
-
-            input,
-            textarea {
-                margin: 1.5rem;
-            }
-        }
-
-        .contact-information {
-            flex-direction: row;
-            justify-content: space-between;
-
-            div {
-                img {
-                    background-color: var(--cyan);
-                    width: 2vw;
-                    padding: 0.5rem;
-                    border-radius: 5px;
-                }
-            }
+        nav a {
+            margin: 0.25rem 0.75rem;
         }
     }
 
-    /* =====================================================
+    .logo {
+        font-size: 1.3rem;
+        margin-left: 3rem;
+    }
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    p,
+    li {
+        font-size: 1.2rem;
+    }
+
+    #hero,
+    #about,
+    #path,
+    #projects,
+    #skills,
+    #contact {
+        padding: 3rem;
+    }
+
+    .hero-version {
+        font-size: 1.6rem;
+        text-transform: uppercase;
+    }
+
+    .path-content {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #contact form {
+        padding: 2rem;
+        margin: 2rem 0;
+
+        input,
+        textarea {
+            margin: 1.5rem;
+        }
+    }
+
+    .contact-information {
+        flex-direction: row;
+        justify-content: space-between;
+
+        div {
+            img {
+                background-color: var(--cyan);
+                width: 2vw;
+                padding: 0.5rem;
+                border-radius: 5px;
+            }
+        }
+    }
+}
+
+/* =====================================================
    DESKTOP  (>= 1024px)
    ===================================================== */
-    @media screen and (min-width: 1024px) {
+@media screen and (min-width: 1024px) {
 
-        header {
-            nav {
-                margin-right: 4rem;
-            }
+    header {
+        nav {
+            margin-right: 4rem;
         }
+    }
 
-        .logo {
-            font-size: 1.4rem;
-            margin-left: 5rem;
+    .logo {
+        font-size: 1.4rem;
+        margin-left: 5rem;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    #hero,
+    #about,
+    #path,
+    #skills,
+    #contact,
+    #projects {
+        padding: 5rem;
+    }
+
+    #hero {
+        flex-direction: row;
+        gap: 0;
+        justify-content: space-between;
+
+        p {
+            max-width: 65vw;
         }
+    }
 
-        h1 {
-            font-size: 4rem;
+    #hero-version {
+        font-size: 2rem;
+    }
+
+    #about {
+        margin-top: 15vh;
+
+        img {
+            max-width: 20vw;
         }
+    }
 
-        #hero,
-        #about,
-        #path,
-        #skills,
-        #contact,
-        #projects {
-            padding: 5rem;
+    .about-pp {
+        flex-direction: row;
+        justify-content: space-between;
+
+        .img-container {
+            max-height: 60vh;
         }
+    }
 
-        #hero {
-            flex-direction: row;
-            gap: 0;
-            justify-content: space-between;
+    .professional-goal {
+        max-height: 50vh;
 
-            p {
-                max-width: 65vw;
-            }
+        h3 {
+            font-size: 5vh;
         }
+    }
 
-        #hero-version {
+    .path-structure {
+        padding: 2rem;
+
+        h3 {
             font-size: 2rem;
         }
+    }
 
-        #about {
-            margin-top: 15vh;
+    .path-content {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 0;
 
-            img {
-                max-width: 20vw;
-            }
+        article {
+            max-width: 25vw;
+            margin-top: 2rem;
         }
+    }
 
-        .about-pp {
-            flex-direction: row;
-            justify-content: space-between;
-
-            .img-container {
-                max-height: 60vh;
-            }
-        }
-
-        .professional-goal {
-            max-height: 50vh;
-
-            h3 {
-                font-size: 5vh;
-            }
-        }
-
-        .path-structure {
-            padding: 2rem;
-
-            h3 {
-                font-size: 2rem;
-            }
-        }
-
-        .path-content {
-            grid-template-columns: 1fr 1fr 1fr;
-            gap: 0;
-
-            article {
-                max-width: 25vw;
-                margin-top: 2rem;
-            }
-        }
-
-        #projects {
-            ul {
-                flex-wrap: wrap;
-            }
-        }
-
-        .lf {
-            margin-left: 10rem;
-        }
-
-        #skills .skills-section {
-            flex-direction: row;
+    #projects {
+        ul {
             flex-wrap: wrap;
-            gap: 0;
-
-            article {
-                margin: 2rem;
-                max-width: 50%;
-            }
         }
+    }
 
-        .contact-content {
-            flex-direction: row;
-            justify-content: space-between;
-        }
+    .lf {
+        margin-left: 10rem;
+    }
 
-        #contact form {
-            min-width: 50%;
+    #skills .skills-section {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 0;
+
+        article {
             margin: 2rem;
+            max-width: 50%;
         }
+    }
 
-        .contact-information {
-            flex-direction: column;
-            justify-content: space-around;
-            /* align-items: center; */
-            min-width: 50%;
-            padding: 2rem;
+    .contact-content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
 
-            div {
-                img {
-                    background-color: var(--cyan);
-                    width: 2vw;
-                    padding: 0.5rem;
-                    border-radius: 5px;
-                }
+    #contact form {
+        min-width: 50%;
+        margin: 2rem;
+    }
+
+    .contact-information {
+        flex-direction: column;
+        justify-content: space-around;
+        /* align-items: center; */
+        min-width: 50%;
+        padding: 2rem;
+
+        div {
+            img {
+                background-color: var(--cyan);
+                width: 2vw;
+                padding: 0.5rem;
+                border-radius: 5px;
             }
         }
     }
+
+    #projects {
+        position: relative;
+        --pad: 3rem;
+        /* = le padding de #projects à cette taille d'écran */
+    }
+
+    .project-card {
+        display: flex;
+        flex-direction: column;
+        gap: 0.6rem;
+        box-sizing: border-box;
+
+        /* moitié de la zone de contenu de la section, alignée à droite */
+        position: absolute;
+        top: 50%;
+        right: 15rem;
+        width: calc((60% - 2 * var(--pad)) / 2);
+        max-height: calc(100% - 2rem);
+        overflow-y: auto;
+        z-index: 400;
+
+        padding: 1rem 1.2rem;
+        background: var(--black);
+        border: 2px solid var(--cyan-transparent);
+        box-shadow: 0 0 15px 1px var(--cyan-transparent);
+
+        opacity: 0;
+        visibility: hidden;
+        transform: translate(2rem, -50%);
+        transition: opacity 0.3s ease, transform 0.3s ease, visibility 0s linear 10s;
+        pointer-events: none;
+
+        h3 {
+            margin: 0;
+            font-family: var(--font-annexe);
+            font-size: 1.2rem;
+            color: var(--green);
+        }
+
+        img {
+            width: 100%;
+            aspect-ratio: 21 / 9;
+            padding: 0;
+            object-fit: cover;
+            background: var(--black);
+        }
+
+        p {
+            margin: 0;
+            font-size: 1rem;
+            line-height: 1.5;
+            color: var(--white);
+        }
+
+        .contact-btn {
+            align-self: flex-start;
+            padding: 0.4rem 1rem;
+            font-size: 0.9rem;
+            text-decoration: none;
+        }
+    }
+
+    .project-card:after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: repeating-linear-gradient(to bottom,
+                transparent 0 2px,
+                rgba(0, 0, 0, 0.214) 2px 3px);
+        pointer-events: none;
+    }
+
+
+    .project-card.is-active {
+        opacity: 1;
+        visibility: visible;
+        pointer-events: auto;
+        transform: translate(0, -50%);
+        transition-delay: 0s;
+    }
+}

@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
+    <script src="./cards.js" defer></script>
     <link rel="stylesheet" href="./style.css">
     <title>Home</title>
 </head>
@@ -20,10 +21,10 @@
         <div class="logo"><a href="#hero"><span>LS</span>_</a></div>
         <nav>
             <a href="#hero" class="home neon-cyan">Home</a>
-            <a href="#about">À_propo</a>
+            <a href="#about">À_propos</a>
             <a href="#projects">Projets</a>
             <a href="#path">Parcours</a>
-            <a href="#skills">COmpétences</a>
+            <a href="#skills">Compétences</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
@@ -34,15 +35,18 @@
             <h2 class="full-name neon-magenta ">Lucas Sand</h2>
             <p>
                 J’aime découvrir de nouvelles choses, de nouvelles technologies et me
-                <span class="green ">challenger</span>. Je suis investi dans mon travail et j'ai l'habitude du travail d’équipe.
-                Actuellement en Master à Epitech, je suis quelqu'un de polyvalent, de <span class="green">motivé</span> et de très <span class="green">curieux</span>. 
+                <span class="green ">challenger</span>. Je suis investi dans mon travail et j'ai l'habitude du travail
+                d’équipe.
+                Actuellement en Master à Epitech, je suis quelqu'un de polyvalent, de <span class="green">motivé</span>
+                et de très <span class="green">curieux</span>.
             </p>
             <p> Si vous avez un projet, n’hésitez pas me <a href="#contact" class="cyan neon-cyan  contact-btn"
                     id="contact-me-btn">contacter</a>
             </p>
         </div>
         <div>
-            <a href="./assets/CV.pdf" download="LUCAS_SAND_CV.pdf" class="cyan neon-cyan contact-btn">Télécharger mon CV</a>
+            <a href="./assets/CV.pdf" download="LUCAS_SAND_CV.pdf" class="cyan neon-cyan contact-btn">Télécharger mon
+                CV</a>
         </div>
     </section>
 
@@ -73,30 +77,49 @@
 
     <section id="projects">
         <h2 class="white neon-white">Projets</h2>
-        <ul>
-            <li class="lf">
-                <a href="https://github.com/EpitechMscProPromo2029/T-WEB-501-REN-5-1-job_board-1" target="_blank">
-                    <p>
-                        drwxr-xr-x 1 LS guess 4096 4096 Oct 10 <span>job_board/</span>
-                    </p>
-                </a>
-            </li>
 
-            <li class="lf">
-                <a href="https://oummakids.com/" target="_blank">
-                    <p>
-                        drwxr-xr-x 1 LS guess 4096 4096 May 16 <span>oummakids/</span>
-                    </p>
+        <ul>
+            <li class="lf" data-project="job-board">
+                <a href="https://github.com/EpitechMscProPromo2029/T-WEB-501-REN-5-1-job_board-1" target="_blank">
+                    <p>drwxr-xr-x 1 LS guess 4096 4096 Oct 10 <span>job_board/</span></p>
                 </a>
             </li>
-            <li class="lf">
+            <li class="lf" data-project="oummakids">
+                <a href="https://oummakids.com/" target="_blank">
+                    <p>drwxr-xr-x 1 LS guess 4096 4096 May 16 <span>oummakids/</span></p>
+                </a>
+            </li>
+            <li class="lf" data-project="vet-emergency">
                 <a href="https://urgence-veterinaire-mulhouse.fr/" target="_blank">
-                    <p>
-                        drwxr-xr-x 1 LS guess 4096 4096 Apr 05 <span>vet_emergency/</span>
-                    </p>
+                    <p>drwxr-xr-x 1 LS guess 4096 4096 Apr 05 <span>vet_emergency/</span></p>
                 </a>
             </li>
         </ul>
+
+        <article class="project-card" id="card-job-board">
+            <h3 class="green neon-green">Job Board</h3>
+            <img src="./assets/job-board.svg" alt="Aperçu du projet job_board">
+            <p>Développement d’une plateforme de recrutement sur laquelle les candidats peuvent postuler aux offres
+                d’emploi proposées.
+                Réaliser dans le cadre d’un projet Epitech.</p>
+            <a href="#" class="contact-btn cyan neon-cyan">Voir le projet</a>
+        </article>
+
+        <article class="project-card" id="card-oummakids">
+            <h3 class="green neon-green">Oummakids</h3>
+            <img src="./assets/oummakids.svg" alt="Aperçu du projet oummakids">
+            <p>Développement d’une API REST dans le cadre du projet Oummakids, une plateforme de babysitting en ligne,
+                lors d’un stage en back-end. L’application propose notamment un système de paiement et une messagerie
+                instantanée.</p>
+            <a href="#" class="contact-btn cyan neon-cyan">Voir le projet</a>
+        </article>
+
+        <article class="project-card" id="card-vet-emergency">
+            <h3 class="green neon-green">Vet Emergency</h3>
+            <img src="./assets/vet-favicon.png" alt="Aperçu du projet vet_emergency" style="object-fit: contain;">
+            <p>Création du site vitrine d’un vétérinaire urgentiste. Demande d’un particulier qui n’avait pas encore de site internet. </p>
+            <a href="#" class="contact-btn cyan neon-cyan">Voir le projet</a>
+        </article>
     </section>
 
     <section id="path">
@@ -112,10 +135,11 @@
 
                 <article>
                     <p class="cyan  years">2024 - 2026 / IMTS (INSITUT MAIRE-THÉRÈSE SOLACROUP)</p>
-                    <p class="grey neon-grey">Préparatoire au métier du numérique, puis obtention du titre professionnel Développeur Web et Web Mobile,
+                    <p class="grey neon-grey">Préparatoire au métier du numérique, puis obtention du titre professionnel
+                        Développeur Web et Web Mobile,
                         développeur Front-end et Back-end.</p>
                 </article>
-                
+
                 <article>
                     <p class="cyan  years">2025 / MOOC ANSCII</p>
                     <div>
@@ -199,7 +223,7 @@
             </article>
             <article class="cyan-hover">
                 <h3 class="green ">Stacks</h3>
-                <section class="techno">
+                <div class="techno">
                     <p class="white neon-white">HTML</p>
                     <p class="white neon-white">CSS</p>
                     <p class="white neon-white">Javascript</p>
@@ -207,27 +231,27 @@
                     <p class="white neon-white">PHP</p>
                     <p class="white neon-white">SQL</p>
                     <p class="white neon-white">Bash</p>
-                </section>
+                </div>
             </article>
             <article>
                 <h3 class="green ">Framework & DBMS</h3>
-                <section class="framework">
+                <div class="framework">
                     <p class="white neon-white">Symphony</p>
                     <p class="white neon-white">Prisma</p>
                     <p class="white neon-white">MySql</p>
                     <p class="white neon-white">MongoDB</p>
                     <p class="white neon-white">PostreSQL</p>
-                </section>
+                </div>
             </article>
             <article>
                 <h3 class="green ">Tools</h3>
-                <section class="tools">
+                <div class="tools">
                     <p class="white neon-white">Docker</p>
                     <p class="white neon-white">Figma</p>
                     <p class="white neon-white">Git</p>
                     <p class="white neon-white">VsCode</p>
                     <p class="white neon-white">LLM</p>
-                </section>
+                </div>
             </article>
         </section>
     </section>
