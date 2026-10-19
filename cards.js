@@ -1,3 +1,5 @@
+import nodemailer from "nodemailer";
+
 
 const items = document.querySelectorAll('.lf[data-project]');
 const cards = document.querySelectorAll('.project-card');
@@ -30,4 +32,3 @@ cards.forEach(card => {
     card.addEventListener('mouseenter', () => clearTimeout(hideTimer));
     card.addEventListener('mouseleave', scheduleHide);
 });
-
