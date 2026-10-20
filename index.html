@@ -12,11 +12,127 @@
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
     <script src="./cards.js" defer></script>
+    <script src="./languages.js" defer></script>
     <link rel="stylesheet" href="./style.css">
     <title>Home</title>
 </head>
 
 <body class="orbitron">
+    <button id="languages">Changer de langue</button>
+    <header>
+        <div class="logo"><a href="#hero"><span>LS</span>_</a></div>
+        <nav>
+            <a href="#hero" class="home neon-cyan">Home</a>
+            <a href="#about" id="nav_about">À_propos</a>
+            <a href="#projects" id="nav_projects">Projets</a>
+            <a href="#path" id="nav_path">Parcours</a>
+            <a href="#skills" id="nav_skills">Compétences</a>
+            <a href="#contact" id="nav_contact">Contact</a>
+        </nav>
+    </header>
+    <section id="hero">
+        <div>
+            <div class="hero-version neon-cyan cyan">sys.init // portfolio_v1.0</div>
+            <h1 class="neon-white" id="h1">Developpeur <br> full-stack</h1>
+            <h2 class="full-name neon-magenta ">Lucas Sand</h2>
+            <p id="intro_paragraph">
+                J’aime découvrir de nouvelles choses, de nouvelles technologies et me
+                <span class="green ">challenger</span>. Je suis investi dans mon travail et j'ai l'habitude du travail
+                d’équipe.
+                Actuellement en Master à Epitech, je suis quelqu'un de polyvalent, de <span class="green">motivé</span>
+                et de très <span class="green">curieux</span>.
+            </p>
+            <p> Si vous avez un projet, n’hésitez pas me <a href="#contact" class="cyan neon-cyan  contact-btn"
+                    id="contact-me-btn">contacter</a>
+            </p>
+        </div>
+        <div>
+            <a href="./assets/CV.pdf" download="LUCAS_SAND_CV.pdf" class="cyan neon-cyan contact-btn" id="cv_download">Télécharger mon
+                CV</a>
+        </div>
+    </section>
+
+
+
+    <section id="about">
+        <h2 class="white neon-white" id="title_about">À_propos/</h2>
+        <div class="about-pp">
+            <div class="img-container">
+                <img src="./assets/PHOTOS LUCAS nb 47x60.jpg" alt="photographic portrait">
+            </div>
+            <div class="professional-goal">
+                <h3 class="neon-cyan" id="title_goal_exe">objectif_porfessionnel.exe</h3>
+                <p>Passionné par les technologies et la programmation, je souhaite continuer à développer mes
+                    compétences
+                    et acquérir de l’expérience dans le domaine du développement informatique. <br> Actuellement à
+                    Epitech, le master que je suis s’inscrit dans cette démarche et me permet d’approfondir mes
+                    connaissances à plusieurs niveaux. <br>
+                    Curieux et polyvalent, j’ai eu l’occasion d’évoluer dans différents secteurs, notamment
+                    la restauration, la vente et le développement. <br> Ces expériences m’ont permis de développer mon
+                    sens
+                    du contact, ma capacité à travailler en équipe et mon aptitude à m’adapter à de nouveaux
+                    environnements.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2 class="white neon-white">Projets</h2>
+
+        <ul>
+            <li class="lf" data-project="job-board">
+                <a href="https://github.com/EpitechMscProPromo2029/T-WEB-501-REN-5-1-job_board-1" target="_blank">
+                    <p>drwxr-xr-x 1 LS guess 4096 4096 Oct 10 <span>job_board/</span></p>
+                </a>
+            </li>
+            <li class="lf" data-project="oummakids">
+                <a href="https://oummakids.com/" target="_blank">
+                    <p>drwxr-xr-x 1 LS guess 4096 4096 May 16 <span>oummakids/</span></p>
+                </a>
+            </li>
+            <li class="lf" data-project="vet-emergency">
+                <a href="https://urgence-veterinaire-mulhouse.fr/" target="_blank">
+                    <p>drwxr-xr-x 1 LS guess 4096 4096 Apr 05 <span>vet_emergency/</span></p>
+                </a>
+            </li>
+        </ul>
+
+        <article class="project-card" id="card-job-board">
+            <h3 class="green neon-green">Job Board</h3>
+            <img src="./assets/job-board.svg" alt="Aperçu du projet job_board">
+            <p>Développement d’une plateforme de recrutement sur laquelle les candidats peuvent postuler aux offres
+                d’emploi proposées.
+                Réaliser dans le cadre d’un projet Epitech.</p>
+            <a href="https://github.com/EpitechMscProPromo2029/T-WEB-501-REN-5-1-job_board-1" class="contact-btn cyan neon-cyan" target="_blank">Voir le projet</a>
+        </article>
+
+        <article class="project-card" id="card-oummakids">
+            <h3 class="green neon-green">Oummakids</h3>
+            <img src="./assets/oummakids.svg" alt="Aperçu du projet oummakids">
+            <p>Développement d’une API REST dans le cadre du projet Oummakids, une plateforme de babysitting en ligne,
+                lors d’un stage en back-end. L’application propose notamment un système de paiement et une messagerie
+                instantanée.</p><!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="./cards.js" defer></script>
+    <script src="./languages.js" defer></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>Home</title>
+</head>
+
+<body class="orbitron">
+    <button id="languages">Changer de langue</button>
     <header>
         <div class="logo"><a href="#hero"><span>LS</span>_</a></div>
         <nav>
@@ -31,9 +147,9 @@
     <section id="hero">
         <div>
             <div class="hero-version neon-cyan cyan">sys.init // portfolio_v1.0</div>
-            <h1 class="neon-white">Developpeur <br> full-stack</h1>
+            <h1 class="neon-white" id="h1">Developpeur <br> full-stack</h1>
             <h2 class="full-name neon-magenta ">Lucas Sand</h2>
-            <p>
+            <p id="intro_paragraph">
                 J’aime découvrir de nouvelles choses, de nouvelles technologies et me
                 <span class="green ">challenger</span>. Je suis investi dans mon travail et j'ai l'habitude du travail
                 d’équipe.
@@ -111,6 +227,182 @@
             <p>Développement d’une API REST dans le cadre du projet Oummakids, une plateforme de babysitting en ligne,
                 lors d’un stage en back-end. L’application propose notamment un système de paiement et une messagerie
                 instantanée.</p>
+            <a href="https://oummakids.com/" class="contact-btn cyan neon-cyan" target="_blank">Voir le projet</a>
+        </article>
+
+        <article class="project-card" id="card-vet-emergency">
+            <h3 class="green neon-green">Vet Emergency</h3>
+            <img src="./assets/vet-favicon.png" alt="Aperçu du projet vet_emergency" style="object-fit: contain;">
+            <p>Création du site vitrine d’un vétérinaire urgentiste. Demande d’un particulier qui n’avait pas encore de site internet. </p>
+            <a href="https://urgence-veterinaire-mulhouse.fr/" class="contact-btn cyan neon-cyan" target="_blank">Voir le projet</a>
+        </article>
+    </section>
+
+    <section id="path">
+        <h2 class="white neon-white">Parcours/</h2>
+        <div class="path-structure">
+            <h3 class="green ">Formations</h3>
+            <div class="path-content">
+
+                <article>
+                    <p class="cyan  years">2026 - 2027 / EPITECH</p>
+                    <p class="grey hidden"> Préparatoire et master en cours.</p>
+                </article>
+
+                <article>
+                    <p class="cyan  years">2024 - 2026 / IMTS (INSITUT MAIRE-THÉRÈSE SOLACROUP)</p>
+                    <p class="grey neon-grey">Préparatoire au métier du numérique, puis obtention du titre professionnel
+                        Développeur Web et Web Mobile,
+                        développeur Front-end et Back-end.</p>
+                </article>
+
+                <article>
+                    <p class="cyan  years">2025 / MOOC ANSCII</p>
+                    <div>
+                        <p class="grey">MOOC Cybersécurité SecNumAcadémie de l'ANSSI (taux de réussite
+                            100%).</p>
+                    </div>
+                </article>
+
+
+                <article>
+                    <p class="cyan  years">2021 - 2022 / LYCÉE ALEXANDRE DUMAS</p>
+                    <p class="grey"> Mise à niveau (MAN) en Hôtelerie - Restauration, découverte de
+                        la
+                        gestion d'entreprise, cuisine de collectivitée et de restauration,
+                        ainsi que service à table.</p>
+                </article>
+
+                <article>
+                    <p class="cyan  years">2018 - 2021 / LYCÉE THÉODORE DECK</p>
+                    <p class="grey">BAC Général, spécialisation Maths et Numérique et Sciences
+                        Informatique.</p>
+                </article>
+            </div>
+
+            <h3 class="green ">Éxperiences</h3>
+            <div class="path-content">
+                <article>
+                    <p class="cyan  years">2026 - OUMMAKIDS</p>
+                    <p class="grey">Développement d'une API REST dans le cadre du projet
+                        Oummakids, une plateforme de babysitting en ligne, lors d'un stage en back-end.</p>
+                </article>
+                <article>
+                    <P class="cyan  years">2025 - HÔTEL DU LAC</P>
+                    <p class="grey">Serveur au petit-déjeuner, mise en place du buffet en salle
+                        ainsi
+                        que service client à table.</p>
+                </article>
+                <article>
+                    <p class="cyan  years">2024 - LA GRAPPE</p>
+                    <p class="grey"> Utilisation des fours hautes températures, préparations des plats
+                        ainsi que préparation des condiments. Nettoyage de la cuisine et
+                        des cuisines et du matériel.</p>
+                </article>
+                <article>
+                    <p class="cyan  years">2023 - 2024 POLYVALENT</p>
+                    <p class="grey"> Intérimaire dans plusieurs domaines, papeterie (3ma),
+                        poissonerie(Cora), charcuterie libre service (Super U), usine à la
+                        chaîne (Lisbeth), restauration rapide (Burger King), ainsi que les
+                        vendanges.</p>
+                </article>
+                <article>
+                    <p class="cyan  years">2023 - STARTLOC</p>
+                    <p class="grey">Vente de contract, avec SAV client personnalisé. Prospection
+                        télephonique ainsi que prise en main du logiciel ZOHO.</p>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- regarder comment faire le graphique avec front, back, env, etc.. -->
+    <section id="skills">
+        <h2 class="white neon-white">compétences/</h2>
+        <section class="skills-section">
+            <article>
+                <h3 class="green ">Soft_skills</h3>
+                <div class="soft-skills-content">
+                    <p class="white neon-white">Bon relationnel</p>
+                    <p class="white neon-white">Ouvert d'esprit</p>
+                    <p class="white neon-white">Curieux</p>
+                    <p class="white neon-white">Capacité d'apprentissage</p>
+                    <p class="white neon-white">Logique</p>
+                    <p class="white neon-white">Esprit d'équipe</p>
+                </div>
+            </article>
+            <article class="cyan-hover">
+                <h3 class="green ">Languages</h3>
+                <div class="soft-skills-languages">
+                    <p class="white neon-white">Français - Natif</p>
+                    <p class="white neon-white">Anglais - B1</p>
+                </div>
+            </article>
+            <article class="cyan-hover">
+                <h3 class="green ">Stacks</h3>
+                <div class="techno">
+                    <p class="white neon-white">HTML</p>
+                    <p class="white neon-white">CSS</p>
+                    <p class="white neon-white">Javascript</p>
+                    <p class="white neon-white">TypeScript</p>
+                    <p class="white neon-white">PHP</p>
+                    <p class="white neon-white">SQL</p>
+                    <p class="white neon-white">Bash</p>
+                </div>
+            </article>
+            <article>
+                <h3 class="green ">Framework & DBMS</h3>
+                <div class="framework">
+                    <p class="white neon-white">Symphony</p>
+                    <p class="white neon-white">Prisma</p>
+                    <p class="white neon-white">MySql</p>
+                    <p class="white neon-white">MongoDB</p>
+                    <p class="white neon-white">PostreSQL</p>
+                </div>
+            </article>
+            <article>
+                <h3 class="green ">Tools</h3>
+                <div class="tools">
+                    <p class="white neon-white">Docker</p>
+                    <p class="white neon-white">Figma</p>
+                    <p class="white neon-white">Git</p>
+                    <p class="white neon-white">VsCode</p>
+                    <p class="white neon-white">LLM</p>
+                </div>
+            </article>
+        </section>
+    </section>
+
+
+    <section id="contact">
+        <h2 class="white neon-white">Contact/</h2>
+        <div class="contact-content">
+            <form action="mailto:lucas.sand@epitech.eu">
+                <input type="email" name="email" placeholder="Email" id="email">
+                <input type="name" name="name" placeholder="Full_name">
+                <textarea name="project" placeholder="Your_message" id="content-message"></textarea>
+                <button type="submit" class="btn-start-communication cyan  bg-black" id="start-communication">Start
+                    communication</button>
+            </form>
+            <div class="contact-information">
+                <div>
+                    <img src="./assets/email_icon.png" alt="email icon">
+                    <p>Email</p>
+                    <p>lucas.sand@epitech.eu</p>
+                </div>
+                <div>
+                    <img src="./assets/location_icon.png" alt="icon on a location map">
+                    <p>Location</p>
+                    <p>35000 Rennes, France</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <p>@mysite allRightReserved</p>
+    </footer>
+</body>
+
+</html>
             <a href="https://oummakids.com/" class="contact-btn cyan neon-cyan" target="_blank">Voir le projet</a>
         </article>
 

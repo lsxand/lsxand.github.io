@@ -1,6 +1,3 @@
-import nodemailer from "nodemailer";
-
-
 const items = document.querySelectorAll('.lf[data-project]');
 const cards = document.querySelectorAll('.project-card');
 const HIDE_DELAY = 500; // ms avant que la card parte
@@ -32,3 +29,5 @@ cards.forEach(card => {
     card.addEventListener('mouseenter', () => clearTimeout(hideTimer));
     card.addEventListener('mouseleave', scheduleHide);
 });
+
+
