@@ -1,10 +1,10 @@
 
 
 const btn_langue = document.getElementById('btn-langue');
+const nav_home = document.getElementById('home');
 const nav_about = document.getElementById('nav_about');
 const nav_projects = document.getElementById('nav_projects');
 const nav_skills = document.getElementById('nav_skills');
-const nav_contact = document.getElementById('nav_contact');
 const nav_path = document.getElementById('nav_path');
 const h1 = document.getElementById('h1');
 const intro_paragraph = document.getElementById('intro_paragraph');
@@ -24,12 +24,12 @@ const mooc_cybersecurity = document.getElementById('mooc_cybersecurity');
 const man_2021_2022 = document.getElementById('man_2021_2022');
 const bac_2018_2021 = document.getElementById('bac_2018_2021');
 const h2_experiences = document.getElementById('h2_experiences');
-const experiences_paragraph = document.getElementById('experiences_paragraph');
-const lac_paragraph = document.getElementById('lac_paragraph');
-const grappe_paragraph = document.getElementById('grappe_paragraph');
+const oummakids_exp_paragraph = document.getElementById('oummakids_exp_paragraph');
+const lac_exp_paragraph = document.getElementById('lac_exp_paragraph');
+const grappe_exp_paragraph = document.getElementById('grappe_exp_paragraph');
 const versatile = document.getElementById('versatile');
-const versatile_paragraph = document.getElementById('versatile_paragraph');
-const startloc_paragrap = document.getElementById('startloc_paragraph');
+const versatile_exp_paragraph = document.getElementById('versatile_exp_paragraph');
+const startloc_exp_paragrap = document.getElementById('startloc_exp_paragraph');
 const h2_skills = document.getElementById('h2_skills');
 const h3_soft_skills = document.getElementById('h3_soft_skills');
 const soft_skills_relationnal = document.getElementById('soft_skills_relationnal');
@@ -46,11 +46,15 @@ const h3_framework = document.getElementById('h3_framework');
 const h3_tools = document.getElementById('h3_tools');
 const location_footer = document.getElementById('location_footer');
 const start_communication = document.getElementById('start_communication');
+const see_job_board_btn = document.getElementById('see_job_board_btn');
+const see_oummakids_btn = document.getElementById('see_oummakids_btn');
+const see_vet_btn = document.getElementById('see_vet_btn');
 
+let _nav_home = "Home/"
 let _nav_about = "About/";
 let _nav_projects = "Projects/";
-let _nav_skills = "Path/";
-let _nav_contact = "Skills/";
+let _nav_path = "Path/";
+let _nav_skills = "Skills/";
 let _h1 = "Developper <br> Full-Stack";
 let _intro_paragraph = "I like discover new things, new technology and <span class='green'>challenge myself</span>. II am invested in my work and love teamwork. Currently studying computer science and soon to be a student at Epitech, looking for a job that would allow me to finance my studies while developing my professional experience. Versatile, <span class='green'>motivated</span> and highly <span class='green'>adaptable profile</span>.</p>";
 let _contact_btn_paragraph = "If you have a project, don't hesitate to <a href='#contact' class='cyan neon-cyan  contact-btn' id='contact-me-btn'>contact_me</a>";
@@ -59,22 +63,22 @@ let _cv_download = "Download my CV";
 let _title_about = "About_me/";
 let _title_goal_exe = "Professional_goal.exe";
 let _professional_goal_paragraph = "Passionate about web technologies and programming, I build my academic and professional career with determination. My upcoming integration at Epitech represents a key step in my goal of becoming an expert developer. <br> I am looking for professional opportunities that allow me to combine funding for my studies and skills development. My varied experience, from catering to sales and development, demonstrates my ability to quickly adapt to new environments and meet diverse challenges.";
-// let _job_board_card_paragraph;
-// let _oummakids_card_paragraph;
-let _vet_card_paragraph;
+let _job_board_card_paragraph = "Development of a recruitment platform where candidates can apply for job openings.To be completed as part of an Epitech project.";
+let _oummakids_card_paragraph = "Development of a recruitment platform that allows candidates to view job postings and apply for them. Project completed as part of an Epitech project.";
+let _vet_card_paragraph = "Development of a showcase website for an emergency veterinarian, at his request, to expand his online presence.";
 let _h2_path = "Path/";
-// let _epitech_2026_2029;
-// let _imts_2024_2026;
-// let _mooc_cybersecurity;
-// let _man_2021_2022;
-// let _bac_2018_2021;
+let _epitech_2026_2029 = "Pre-MSC, leading to a degree in Information Systems Architecture (BAC+5). An approach focused on carrying out real-world projects and on independence";
+let _imts_2024_2026 = "Training in digital professions and earning the professional certification as a Web and Mobile Web Developer (DWWM) – RNCP Level 5 (BAC+2).";
+let _mooc_cybersecurity = "ANSSI's SecNumAcadémie Cybersecurity MOOC (100%)";
+let _man_2021_2022 = "Continuing Education in Hospitality and Restaurant Management, an introduction to business management, institutional and restaurant cooking, as well as table service.";
+let _bac_2018_2021 = "General Baccalaureate, with a specialization in Mathematics, Digital Technology, and Science Computer Science.";
 let _h2_experiences = "Experiences";
-// let _experiences_paragraph;
-// let _lac_paragraph;
-// let _grappe_paragraph;
+let _oummakids_exp_paragraph = "Back-end development in a pair programming setting for a web platform designed to connect parents with babysitters, during an internship as part of a team of three developers, on behalf of a private client based in Paris.";
+let _lac_exp_paragraph = "Serving breakfast in the dining room, preparing and restocking the buffet, and greeting and serving guests at their tables.";
+let _grappe_exp_paragraph = "Use of high-temperature ovens, preparation of dishes, as well as preparation of condiments. Cleaning the kitchen and other kitchen areas and equipment.";
 let _versatile = "2023 - 2024 VERSATILE";
-// let _versatile_paragraph;
-// let _startloc_paragrap;
+let _versatile_exp_paragraph = "Temporary worker in several fields, including a stationery store (3ma), a fish market (Cora), a self-service deli (Super U), an assembly-line factory (Lisbeth), a fast-food restaurant (Burger King), as well as grape harvesting.";
+let _startloc_exp_paragrap = "Telemarketing, contract sales, personalized customer support, and training on how to use the ZOHO software.";
 let _h2_skills = "Skills/";
 let _h3_soft_skills = "Soft-Skills";
 let _soft_skills_relationnal = "Good relationnal";
@@ -91,7 +95,7 @@ let _h3_framework = "Framework & DBMS";
 let _h3_tools = "Tools";
 let _start_communication = "Start communication"
 let _location_footer = "Location";
-
+let _see_projects_btn = "See projects";
 
 
 
@@ -104,9 +108,14 @@ btn_langue.addEventListener('click', (e) => {
     h1.innerHTML = _h1;
     _h1 = h1_;
 
+    const nav_home_ = home.getHTML();
+    nav_home.innerHTML = _nav_home;
+    _nav_home = nav_home_;
+
     const nav_about_ = nav_about.getHTML();
     nav_about.innerHTML = _nav_about;
     _nav_about = nav_about_;
+
 
     const nav_projects_ = nav_projects.getHTML();
     nav_projects.innerHTML = _nav_projects;
@@ -116,13 +125,9 @@ btn_langue.addEventListener('click', (e) => {
     nav_skills.innerHTML = _nav_skills;
     _nav_skills = nav_skills_;
 
-    // const nav_path_ = nav_path.getHTML();
-    // nav_path.innerHTML = _nav_path;
-    // _nav_path = nav_path_;
-
-
-
-
+    const nav_path_ = nav_path.getHTML();
+    nav_path.innerHTML = _nav_path;
+    _nav_path = nav_path_;
 
     const intro_paragraph_ = intro_paragraph.getHTML();
     intro_paragraph.innerHTML = _intro_paragraph;
@@ -152,69 +157,69 @@ btn_langue.addEventListener('click', (e) => {
     professional_goal_paragraph.innerHTML = _professional_goal_paragraph;
     _professional_goal_paragraph = professional_goal_paragraph_;
 
-    // const job_board_card_paragraph_ = job_board_card_paragraph.getHTML();
-    // job_board_card_paragraph.innerHTML = _job_board_card_paragraph;
-    // _job_board_card_paragraph = job_board_card_paragraph_;
+    const job_board_card_paragraph_ = job_board_card_paragraph.getHTML();
+    job_board_card_paragraph.innerHTML = _job_board_card_paragraph;
+    _job_board_card_paragraph = job_board_card_paragraph_;
 
-    // const oummakids_card_paragraph_ = oummakids_card_paragraph.getHTML();
-    // oummakids_card_paragraph.innerHTML = _oummakids_card_paragraph;
-    // _oummakids_card_paragraph = oummakids_card_paragraph_;
+    const oummakids_card_paragraph_ = oummakids_card_paragraph.getHTML();
+    oummakids_card_paragraph.innerHTML = _oummakids_card_paragraph;
+    _oummakids_card_paragraph = oummakids_card_paragraph_;
 
-    // const vet_card_paragraph_ = vet_card_paragraph.getHTML();
-    // vet_card_paragraph.innerHTML = _vet_card_paragraph;
-    // _vet_card_paragraph = vet_card_paragraph_;
+    const vet_card_paragraph_ = vet_card_paragraph.getHTML();
+    vet_card_paragraph.innerHTML = _vet_card_paragraph;
+    _vet_card_paragraph = vet_card_paragraph_;
 
     const h2_path_ = h2_path.getHTML();
     h2_path.innerHTML = _h2_path;
     _h2_path = h2_path_;
 
-    // const epitech_2026_2029_ = epitech_2026_2029.getHTML();
-    // epitech_2026_2029.innerHTML = _epitech_2026_2029;
-    // _epitech_2026_2029 = epitech_2026_2029_;
+    const epitech_2026_2029_ = epitech_2026_2029.getHTML();
+    epitech_2026_2029.innerHTML = _epitech_2026_2029;
+    _epitech_2026_2029 = epitech_2026_2029_;
 
-    // const imts_2024_2026_ = imts_2024_2026.getHTML();
-    // imts_2024_2026.innerHTML = _imts_2024_2026;
-    // _imts_2024_2026 = imts_2024_2026_;
+    const imts_2024_2026_ = imts_2024_2026.getHTML();
+    imts_2024_2026.innerHTML = _imts_2024_2026;
+    _imts_2024_2026 = imts_2024_2026_;
 
-    // const mooc_cybersecurity_ = mooc_cybersecurity.getHTML();
-    // mooc_cybersecurity.innerHTML = _mooc_cybersecurity;
-    // _mooc_cybersecurity = mooc_cybersecurity_;
+    const mooc_cybersecurity_ = mooc_cybersecurity.getHTML();
+    mooc_cybersecurity.innerHTML = _mooc_cybersecurity;
+    _mooc_cybersecurity = mooc_cybersecurity_;
 
-    // const man_2021_2022_ = man_2021_2022.getHTML();
-    // man_2021_2022.innerHTML = _man_2021_2022;
-    // _man_2021_2022 = man_2021_2022_;
+    const man_2021_2022_ = man_2021_2022.getHTML();
+    man_2021_2022.innerHTML = _man_2021_2022;
+    _man_2021_2022 = man_2021_2022_;
 
-    // const bac_2018_2021_ = bac_2018_2021.getHTML();
-    // bac_2018_2021.innerHTML = _bac_2018_2021;
-    // _bac_2018_2021 = bac_2018_2021_;
+    const bac_2018_2021_ = bac_2018_2021.getHTML();
+    bac_2018_2021.innerHTML = _bac_2018_2021;
+    _bac_2018_2021 = bac_2018_2021_;
 
     const h2_experiences_ = h2_experiences.getHTML();
     h2_experiences.innerHTML = _h2_experiences;
     _h2_experiences = h2_experiences_;
 
-    // const experiences_paragraph_ = experiences_paragraph.getHTML();
-    // experiences_paragraph.innerHTML = _experiences_paragraph;
-    // _experiences_paragraph = experiences_paragraph_;
+    const oummakids_exp_paragraph_ = oummakids_exp_paragraph.getHTML();
+    oummakids_exp_paragraph.innerHTML = _oummakids_exp_paragraph;
+    _oummakids_exp_paragraph = oummakids_exp_paragraph_;
 
-    // const lac_paragraph_ = lac_paragraph.getHTML();
-    // lac_paragraph.innerHTML = _lac_paragraph;
-    // _lac_paragraph = lac_paragraph_;
+    const lac_exp_paragraph_ = lac_exp_paragraph.getHTML();
+    lac_exp_paragraph.innerHTML = _lac_exp_paragraph;
+    _lac_exp_paragraph = lac_exp_paragraph_;
 
-    // const grappe_paragraph_ = grappe_paragraph.getHTML();
-    // grappe_paragraph.innerHTML = _grappe_paragraph;
-    // _grappe_paragraph = grappe_paragraph_;
+    const grappe_exp_paragraph_ = grappe_exp_paragraph.getHTML();
+    grappe_exp_paragraph.innerHTML = _grappe_exp_paragraph;
+    _grappe_exp_paragraph = grappe_exp_paragraph_;
 
     const versatile_ = versatile.getHTML();
     versatile.innerHTML = _versatile;
     _versatile = versatile_;
 
-    // const versatile_paragraph_ = versatile_paragraph.getHTML();
-    // versatile_paragraph.innerHTML = _versatile_paragraph;
-    // _versatile_paragraph = versatile_paragraph_;
+    const versatile_exp_paragraph_ = versatile_exp_paragraph.getHTML();
+    versatile_exp_paragraph.innerHTML = _versatile_exp_paragraph;
+    _versatile_exp_paragraph = versatile_exp_paragraph_;
 
-    // const startloc_paragrap_ = startloc_paragrap.getHTML();
-    // startloc_paragrap.innerHTML = _startloc_paragrap;
-    // _startloc_paragrap = startloc_paragrap_;
+    const startloc_exp_paragrap_ = startloc_exp_paragrap.getHTML();
+    startloc_exp_paragrap.innerHTML = _startloc_exp_paragrap;
+    _startloc_exp_paragrap = startloc_exp_paragrap_;
 
     const h2_skills_ = h2_skills.getHTML();
     h2_skills.innerHTML = _h2_skills;
@@ -280,5 +285,10 @@ btn_langue.addEventListener('click', (e) => {
     start_communication.innerHTML = _start_communication;
     _start_communication = start_communication_;
 
+    const see_projects_btn_ = see_job_board_btn.getHTML();
+    see_job_board_btn.innerHTML = _see_projects_btn;
+    see_oummakids_btn.innerHTML = _see_projects_btn;
+    see_vet_btn.innerHTML = _see_projects_btn;
+    _see_projects_btn = see_projects_btn_;
 });
 

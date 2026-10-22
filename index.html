@@ -22,7 +22,7 @@
     <header>
         <div class="logo"><a href="#hero"><span>LS</span>_</a></div>
         <nav>
-            <a href="#hero" class="home neon-cyan/">Home/</a>
+            <a href="#hero" class="home neon-cyan/" id="home">Accueil/</a>
             <a href="#about" id="nav_about">À_propos/</a>
             <a href="#projects" id="nav_projects">Projets/</a>
             <a href="#path" id="nav_path">Parcours/</a>
@@ -42,8 +42,8 @@
                 Actuellement en Master à Epitech, je suis quelqu'un de polyvalent, de <span class='green'>motivé</span>
                 et de très <span class='green'>curieux</span>.
             </p>
-            <p id="contact_btn_paragraph"> Si vous avez un projet, n’hésitez pas me <a href='#contact' class='cyan neon-cyan  contact-btn'
-                    id='contact-me-btn'>contacter</a>
+            <p id="contact_btn_paragraph"> Si vous avez un projet, n’hésitez pas me <a href='#contact'
+                    class='cyan neon-cyan  contact-btn' id='contact-me-btn'>contacter</a>
             </p>
         </div>
         <div>
@@ -103,28 +103,28 @@
         <article class="project-card" id="card-job-board">
             <h3 class="green neon-green">Job Board</h3>
             <img src="./assets/job-board.svg" alt="Aperçu du projet job_board">
-            <p id="job_board_card_paragraph">Développement d’une plateforme de recrutement sur laquelle les candidats peuvent postuler aux offres
-                d’emploi proposées.
-                Réaliser dans le cadre d’un projet Epitech.</p>
+            <p id="job_board_card_paragraph">Développement d’une plateforme de recrutement permettant aux candidats de
+                consulter les offres d’emploi et d’y postuler.
+                Projet réalisé dans le cadre d'un projet Epitech.</p>
             <a href="https://github.com/EpitechMscProPromo2029/T-WEB-501-REN-5-1-job_board-1"
-                class="contact-btn cyan neon-cyan" target="_blank">Voir le projet</a>
+                class="contact-btn cyan neon-cyan" target="_blank" id="see_job_board_btn">Voir le projet</a>
         </article>
 
         <article class="project-card" id="card-oummakids">
             <h3 class="green neon-green">Oummakids</h3>
             <img src="./assets/oummakids.svg" alt="Aperçu du projet oummakids">
-            <p id="oummakids_card_paragraph">Développement d’une API REST dans le cadre du projet Oummakids, une plateforme de babysitting en ligne,
-                lors d’un stage en back-end. L’application propose notamment un système de paiement et une messagerie
-                instantanée.</p>
-            <a href="https://oummakids.com/" class="contact-btn cyan neon-cyan" target="_blank">Voir le projet</a>
+            <p id="oummakids_card_paragraph">Conception et développement d’une API REST dans le cadre du projet
+                Oummakids, une plateforme de Babysitting, lors d’un stage de développement back-end. L’application
+                intègre notamment un système de paiement et une messagerie instantanée.</p>
+            <a href="https://oummakids.com/" class="contact-btn cyan neon-cyan" target="_blank" id="see_oummakids_btn">Voir le projet</a>
         </article>
 
         <article class="project-card" id="card-vet-emergency">
             <h3 class="green neon-green">Vet Emergency</h3>
             <img src="./assets/vet-favicon.png" alt="Aperçu du projet vet_emergency" style="object-fit: contain;">
-            <p id="vet_card_paragraph">Création du site vitrine d’un vétérinaire urgentiste. Demande d’un particulier qui n’avait pas encore de
-                site internet. </p>
-            <a href="https://urgence-veterinaire-mulhouse.fr/" class="contact-btn cyan neon-cyan" target="_blank">Voir
+            <p id="vet_card_paragraph">Réalisation d’un site vitrine pour un vétérinaire urgentiste, à sa demande, afin
+                de développer sa présence en ligne. </p>
+            <a href="https://urgence-veterinaire-mulhouse.fr/" class="contact-btn cyan neon-cyan" target="_blank" id="see_vet_btn">Voir
                 le projet</a>
         </article>
     </section>
@@ -136,36 +136,28 @@
             <div class="path-content">
 
                 <article>
-                    <p class="cyan  years">2026 - 2029 / EPITECH</p>
-                    <p class="grey" id="2026_2029" id="epitech_2026_2029"> Préparatoire et master en cours.</p>
+                    <p class="cyan years">2026 - 2029 / EPITECH</p>
+                    <p class="grey" id="epitech_2026_2029" id="epitech_2026_2029"> Pré-MSC, titre visé Architecte de Systèmes
+                        d’informations (BAC+5).
+                        Approche centrée sur la réalisation de projets concrets, et sur l’autonomie</p>
                 </article>
 
                 <article>
-                    <p class="cyan  years">2024 - 2026 / IMTS (INSITUT MAIRE-THÉRÈSE SOLACROUP)</p>
-                    <p class="grey neon-grey" id="imts_2024_2026">Préparatoire au métier du numérique, puis obtention du titre professionnel
-                        Développeur Web et Web Mobile,
-                        développeur Front-end et Back-end.</p>
+                    <p class="cyan years">2024 - 2026 / IMTS (INSITUT MAIRE-THÉRÈSE SOLACROUP)</p>
+                    <p class="grey neon-grey" id="imts_2024_2026">Formation aux métiers du numérique et obtention du
+                        titre professionnel de Développeur Web et Web Mobile (DWWM) – RNCP niveau 5 (Bac+2).</p>
                 </article>
 
                 <article>
-                    <p class="cyan  years">2025 / MOOC ANSCII</p>
-                    <div>
-                        <p class="grey" id="mooc_cybersecurity">MOOC Cybersécurité SecNumAcadémie de l'ANSSI (taux de réussite
-                            100%).</p>
-                    </div>
-                </article>
-
-                <article>
-                    <p class="cyan  years">2021 - 2022 / LYCÉE ALEXANDRE DUMAS</p>
-                    <p class="grey" id="man_2021_2022"> Mise à niveau (MAN) en Hôtelerie - Restauration, découverte de
-                        la
+                    <p class="cyan years">2021 - 2022 / LYCÉE ALEXANDRE DUMAS</p>
+                    <p class="grey" id="man_2021_2022"> Mise à niveau (MAN) en Hôtelerie - Restauration, découverte de la
                         gestion d'entreprise, cuisine de collectivitée et de restauration,
                         ainsi que service à table.</p>
                 </article>
 
                 <article>
-                    <p class="cyan  years">2018 - 2021 / LYCÉE THÉODORE DECK</p>
-                    <p class="grey" id="bac_2018_2021">BAC Général, spécialisation Maths et Numérique et Sciences
+                    <p class="cyan years">2018 - 2021 / LYCÉE THÉODORE DECK</p>
+                    <p class="grey" id="bac_2018_2021">BAC Général, spécialisation Mathématiques et Numérique et Sciences
                         Informatique.</p>
                 </article>
             </div>
@@ -174,32 +166,33 @@
             <div class="path-content">
                 <article>
                     <p class="cyan years">2026 - OUMMAKIDS</p>
-                    <p class="grey" id="experiences_paragraph">Développement d'une API REST dans le cadre du projet
-                        Oummakids, une plateforme de babysitting en ligne, lors d'un stage en back-end.</p>
+                    <p class="grey" id="oummakids_exp_paragraph">Développement back-end en binôme d’une plateforme web
+                        de
+                        mise en relation entre parents et baby-sitters, lors d’un stage réalisé au sein d’une équipe de
+                        trois développeurs, pour le compte d’un particulier basé à Paris.</p>
                 </article>
                 <article>
                     <P class="cyan years">2025 - HÔTEL DU LAC</P>
-                    <p class="grey" id="lac_paragraph">Serveur au petit-déjeuner, mise en place du buffet en salle
-                        ainsi
-                        que service client à table.</p>
+                    <p class="grey" id="lac_exp_paragraph">Service des petits-déjeuners en salle, préparation et réassort du buffet, accueil et service des clients à table.</p>
                 </article>
                 <article>
                     <p class="cyan years">2024 - LA GRAPPE</p>
-                    <p class="grey" id="grappe_paragraph"> Utilisation des fours hautes températures, préparations des plats
+                    <p class="grey" id="grappe_exp_paragraph"> Utilisation des fours hautes températures, préparations
+                        des
+                        plats
                         ainsi que préparation des condiments. Nettoyage de la cuisine et
                         des cuisines et du matériel.</p>
                 </article>
                 <article>
                     <p class="cyan years" id="versatile">2023 - 2024 POLYVALENT</p>
-                    <p class="grey" id="versatile_paragraph"> Intérimaire dans plusieurs domaines, papeterie (3ma),
+                    <p class="grey" id="versatile_exp_paragraph">Intérimaire dans plusieurs domaines, papeterie (3ma),
                         poissonerie(Cora), charcuterie libre service (Super U), usine à la
                         chaîne (Lisbeth), restauration rapide (Burger King), ainsi que les
                         vendanges.</p>
                 </article>
                 <article>
                     <p class="cyan years">2023 - STARTLOC</p>
-                    <p class="grey" id="startloc_paragraph">Vente de contract, avec SAV client personnalisé. Prospection
-                        télephonique ainsi que prise en main du logiciel ZOHO.</p>
+                    <p class="grey" id="startloc_exp_paragraph">Prospection téléphonique, vente de contrats, accompagnement personnalisé des clients et formation à la prise en main du logiciel ZOHO.</p>
                 </article>
             </div>
         </div>
@@ -259,6 +252,12 @@
                     <p class="white neon-white">LLM</p>
                 </div>
             </article>
+            <article>
+                <h3 class="green">ANSCII</h3>
+                <div class="anscii">
+                    <p class="white, neon-white" id="mooc_cybersecurity">MOOC Cybersécurité SecNumAcadémie de l'ANSSI (100%)</p>
+                </div>
+            </article>
         </section>
     </section>
 
@@ -270,7 +269,8 @@
                 <input type="email" name="email" placeholder="Email" id="email">
                 <input type="name" name="name" placeholder="Full_name">
                 <textarea name="project" placeholder="Your_message" id="content-message"></textarea>
-                <button type="submit" class="btn-start-communication cyan  bg-black" id="start_communication">Démarrer la communication</button>
+                <button type="submit" class="btn-start-communication cyan  bg-black" id="start_communication">Démarrer
+                    la communication</button>
             </form>
             <div class="contact-information">
                 <div>
