@@ -1,6 +1,8 @@
 
 
-const btn_langue = document.getElementById('btn-langue');
+// const btn_langue = document.getElementById('btn_langue');
+const flag_desktop = document.getElementById('flag_desktop');
+const flag_phone = document.getElementById('flag_phone');
 const nav_home = document.getElementById('home');
 const nav_about = document.getElementById('nav_about');
 const nav_projects = document.getElementById('nav_projects');
@@ -50,6 +52,9 @@ const see_job_board_btn = document.getElementById('see_job_board_btn');
 const see_oummakids_btn = document.getElementById('see_oummakids_btn');
 const see_vet_btn = document.getElementById('see_vet_btn');
 
+
+let flag_src = "./assets/fr_flag.svg";
+let flag_alt = "french flag";
 let _nav_home = "Home/"
 let _nav_about = "About/";
 let _nav_projects = "Projects/";
@@ -101,9 +106,26 @@ let _see_projects_btn = "See projects";
 
 
 
-
-btn_langue.addEventListener('click', (e) => {
+flag_phone.addEventListener('click', (e) => {
     e.preventDefault();
+    changeLanguage(flag_phone);
+});
+
+flag_desktop.addEventListener('click', (e) => {
+    e.preventDefault();
+    changeLanguage(flag_desktop);
+})
+
+
+function changeLanguage(flag) {
+
+    const flag_src_ = flag.getAttribute('src');
+    const flag_alt_ = flag.getAttribute('alt');
+    flag.setAttribute('src', flag_src);
+    flag.setAttribute('alt', flag_alt);
+    flag_src = flag_src_;
+    flag_alt = flag_alt_;
+
     const h1_ = h1.getHTML();
     h1.innerHTML = _h1;
     _h1 = h1_;
@@ -290,5 +312,6 @@ btn_langue.addEventListener('click', (e) => {
     see_oummakids_btn.innerHTML = _see_projects_btn;
     see_vet_btn.innerHTML = _see_projects_btn;
     _see_projects_btn = see_projects_btn_;
-});
 
+    return;
+}

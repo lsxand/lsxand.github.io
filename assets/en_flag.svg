@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" width="100%" height="100%">
+  <!-- Fond bleu (Royal Blue) -->
+  <rect width="900" height="600" fill="#012169" />
+  
+  <!-- Croix de Saint-André (Blanc) -->
+  <path d="M0,0 L900,600 M900,0 L0,600" stroke="#FFFFFF" stroke-width="120" />
+  
+  <!-- Croix de Saint-Patrick (Rouge, décalée) -->
+  <path d="M0,0 L405,270 M495,330 L900,600" stroke="#C8102E" stroke-width="40" />
+  <path d="M900,0 L495,270 M405,330 L0,600" stroke="#C8102E" stroke-width="40" />
+  
+  <!-- Croix de Saint-Georges (Bordure blanche) -->
+  <rect x="375" y="0" width="150" height="600" fill="#FFFFFF" />
+  <rect x="0" y="225" width="900" height="150" fill="#FFFFFF" />
+  
+  <!-- Croix de Saint-Georges (Rouge) -->
+  <rect x="405" y="0" width="90" height="600" fill="#C8102E" />
+  <rect x="0" y="255" width="900" height="90" fill="#C8102E" />
+</svg>

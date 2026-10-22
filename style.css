@@ -1,6 +1,6 @@
 :root {
     --black: #0a0a0f;
-    --cyan: #00f0ff;
+    --cyan: #00eeff;
     --magenta: #FF4CFF;
     --grey: #b4afaf;
     --white: #FFFFFF;
@@ -86,10 +86,10 @@ body:after {
 header {
     border-bottom: 1px solid var(--cyan-transparent);
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
     gap: 0.25rem;
-    padding: 0.5rem 1rem;
+    padding: 1.5rem 2rem 1rem 2rem;
     background-color: var(--black);
     position: sticky;
     /* nav fixée en haut au scroll */
@@ -107,6 +107,48 @@ header {
             font-size: 0.85rem;
             text-transform: uppercase;
         }
+
+        .header_img {
+            width: 25px;
+            cursor: pointer;
+        }
+
+        .nav-links {
+            display: none;
+            list-style: none;
+            background-color: rgba(0, 0, 0, 0.879);
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+
+}
+
+#flag_phone {
+    align-self: flex-start;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    border-radius: 50%;
+
+}
+
+#flag_desktop {
+    cursor: pointer;
+    display: none;
+}
+
+.desktop_nav {
+    display: none;
+}
+
+#btn_langue {
+    display: flex;
+    cursor: pointer;
+
+    img {
+        border-radius: 7px;
+        width: 1.5rem;
     }
 }
 
@@ -303,6 +345,7 @@ nav a.home {
     flex-direction: column;
     gap: 1.5rem;
 
+
     div {
         display: flex;
         flex-direction: column;
@@ -311,11 +354,13 @@ nav a.home {
 }
 
 .logo {
-    font-size: 1.1rem;
+    font-size: 1.3rem;
     font-weight: 900;
     color: var(--white);
     text-shadow: 0 0 10px var(--cyan);
     margin-left: 0;
+    width: 25px;
+    height: 25px;
 
     span {
         color: var(--cyan);
@@ -326,7 +371,7 @@ nav a.home {
     }
 }
 
-#hero-version {
+.hero-version {
     color: var(--cyan);
     text-shadow: 0 0 10px var(--cyan);
     font-size: 1.2rem;
@@ -700,6 +745,29 @@ nav a.home {
 }
 
 /* =====================================================
+   PHONE  (<= 768px)
+   ===================================================== */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 56px;
+        right: 0;
+        width: 100%;
+    }
+
+    .nav-links.active {
+        display: flex;
+
+        li {
+            padding: 0 1rem;
+        }
+    }
+}
+
+
+/* =====================================================
    TABLETTE  (>= 768px)
    ===================================================== */
 @media screen and (min-width: 768px) {
@@ -707,10 +775,27 @@ nav a.home {
     header {
         flex-direction: row;
         justify-content: space-between;
-        padding: 2rem 2rem 2rem 0;
+        padding: 1.5rem 3rem 1rem 0;
 
         nav a {
             margin: 0.25rem 0.75rem;
+        }
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 56px;
+        right: 0;
+        width: 100%;
+    }
+
+    .nav-links.active {
+        display: flex;
+
+        li {
+            padding: 0 1rem;
         }
     }
 
@@ -781,9 +866,33 @@ nav a.home {
 @media screen and (min-width: 1024px) {
 
     header {
+        flex-direction: row;
+        justify-content: space-between;
+        height: 6vh;
+        align-items: center;
+
         nav {
             margin-right: 4rem;
         }
+
+    }
+
+    #flag_desktop {
+        display: flex;
+        padding-left: 3rem;
+        width: 1.3vw;
+    }
+
+    #flag_phone {
+        display: none;
+    }
+
+    .desktop_nav {
+        display: flex;
+    }
+
+    .phone_nav {
+        display: none;
     }
 
     .logo {

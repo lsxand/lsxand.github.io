@@ -11,23 +11,39 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
-    <script src="./cards.js" defer></script>
-    <script src="./languages.js" defer></script>
+    <script src="./js/cards.js" defer></script>
+    <script src="./js/languages.js" defer></script>
+    <script src="./js/burger_menu.js" defer></script>
     <link rel="stylesheet" href="./style.css">
     <title>Home</title>
 </head>
 
 <body class="orbitron">
-    <button id="btn-langue">Changer de langue</button>
     <header>
         <div class="logo"><a href="#hero"><span>LS</span>_</a></div>
+        <img src="./assets/en_flag.svg" alt="english flag" class="header_img" id="flag_phone">
         <nav>
-            <a href="#hero" class="home neon-cyan/" id="home">Accueil/</a>
-            <a href="#about" id="nav_about">À_propos/</a>
-            <a href="#projects" id="nav_projects">Projets/</a>
-            <a href="#path" id="nav_path">Parcours/</a>
-            <a href="#skills" id="nav_skills">Compétences/</a>
-            <a href="#contact">Contact/</a>
+            <div class="phone_nav">
+                <img src="./assets/menu_code_icon.svg" alt="Open menu" class="header_img" id="burger_btn">
+                <ul class="nav-links" id="nav_links">
+                    <li><a href="#hero" class="home neon-cyan/" id="home">Accueil/</a></li>
+                    <li><a href="#about" id="nav_about">À_propos/</a></li>
+                    <li><a href="#projects" id="nav_projects">Projets/</a></li>
+                    <li><a href="#path" id="nav_path">Parcours/</a></li>
+                    <li><a href="#skills" id="nav_skills">Compétences/</a></li>
+                    <li><a href="#contact">Contact/</a></li>
+                </ul>
+            </div>
+            <div class="desktop_nav">
+                <a href="#hero" class="home neon-cyan/" id="home">Accueil/</a>
+                <a href="#about" id="nav_about">À_propos/</a>
+                <a href="#projects" id="nav_projects">Projets/</a>
+                <a href="#path" id="nav_path">Parcours/</a>
+                <a href="#skills" id="nav_skills">Compétences/</a>
+                <a href="#contact">Contact/</a>
+            </div>
+            <img src="./assets/en_flag.svg" alt="english flag" id="flag_desktop">
+
         </nav>
     </header>
     <section id="hero">
@@ -116,7 +132,8 @@
             <p id="oummakids_card_paragraph">Conception et développement d’une API REST dans le cadre du projet
                 Oummakids, une plateforme de Babysitting, lors d’un stage de développement back-end. L’application
                 intègre notamment un système de paiement et une messagerie instantanée.</p>
-            <a href="https://oummakids.com/" class="contact-btn cyan neon-cyan" target="_blank" id="see_oummakids_btn">Voir le projet</a>
+            <a href="https://oummakids.com/" class="contact-btn cyan neon-cyan" target="_blank"
+                id="see_oummakids_btn">Voir le projet</a>
         </article>
 
         <article class="project-card" id="card-vet-emergency">
@@ -124,7 +141,8 @@
             <img src="./assets/vet-favicon.png" alt="Aperçu du projet vet_emergency" style="object-fit: contain;">
             <p id="vet_card_paragraph">Réalisation d’un site vitrine pour un vétérinaire urgentiste, à sa demande, afin
                 de développer sa présence en ligne. </p>
-            <a href="https://urgence-veterinaire-mulhouse.fr/" class="contact-btn cyan neon-cyan" target="_blank" id="see_vet_btn">Voir
+            <a href="https://urgence-veterinaire-mulhouse.fr/" class="contact-btn cyan neon-cyan" target="_blank"
+                id="see_vet_btn">Voir
                 le projet</a>
         </article>
     </section>
@@ -137,7 +155,8 @@
 
                 <article>
                     <p class="cyan years">2026 - 2029 / EPITECH</p>
-                    <p class="grey" id="epitech_2026_2029" id="epitech_2026_2029"> Pré-MSC, titre visé Architecte de Systèmes
+                    <p class="grey" id="epitech_2026_2029" id="epitech_2026_2029"> Pré-MSC, titre visé Architecte de
+                        Systèmes
                         d’informations (BAC+5).
                         Approche centrée sur la réalisation de projets concrets, et sur l’autonomie</p>
                 </article>
@@ -150,14 +169,16 @@
 
                 <article>
                     <p class="cyan years">2021 - 2022 / LYCÉE ALEXANDRE DUMAS</p>
-                    <p class="grey" id="man_2021_2022"> Mise à niveau (MAN) en Hôtelerie - Restauration, découverte de la
+                    <p class="grey" id="man_2021_2022"> Mise à niveau (MAN) en Hôtelerie - Restauration, découverte de
+                        la
                         gestion d'entreprise, cuisine de collectivitée et de restauration,
                         ainsi que service à table.</p>
                 </article>
 
                 <article>
                     <p class="cyan years">2018 - 2021 / LYCÉE THÉODORE DECK</p>
-                    <p class="grey" id="bac_2018_2021">BAC Général, spécialisation Mathématiques et Numérique et Sciences
+                    <p class="grey" id="bac_2018_2021">BAC Général, spécialisation Mathématiques et Numérique et
+                        Sciences
                         Informatique.</p>
                 </article>
             </div>
@@ -173,7 +194,8 @@
                 </article>
                 <article>
                     <P class="cyan years">2025 - HÔTEL DU LAC</P>
-                    <p class="grey" id="lac_exp_paragraph">Service des petits-déjeuners en salle, préparation et réassort du buffet, accueil et service des clients à table.</p>
+                    <p class="grey" id="lac_exp_paragraph">Service des petits-déjeuners en salle, préparation et
+                        réassort du buffet, accueil et service des clients à table.</p>
                 </article>
                 <article>
                     <p class="cyan years">2024 - LA GRAPPE</p>
@@ -192,7 +214,8 @@
                 </article>
                 <article>
                     <p class="cyan years">2023 - STARTLOC</p>
-                    <p class="grey" id="startloc_exp_paragraph">Prospection téléphonique, vente de contrats, accompagnement personnalisé des clients et formation à la prise en main du logiciel ZOHO.</p>
+                    <p class="grey" id="startloc_exp_paragraph">Prospection téléphonique, vente de contrats,
+                        accompagnement personnalisé des clients et formation à la prise en main du logiciel ZOHO.</p>
                 </article>
             </div>
         </div>
@@ -255,7 +278,8 @@
             <article>
                 <h3 class="green">ANSCII</h3>
                 <div class="anscii">
-                    <p class="white, neon-white" id="mooc_cybersecurity">MOOC Cybersécurité SecNumAcadémie de l'ANSSI (100%)</p>
+                    <p class="white, neon-white" id="mooc_cybersecurity">MOOC Cybersécurité SecNumAcadémie de l'ANSSI
+                        (100%)</p>
                 </div>
             </article>
         </section>

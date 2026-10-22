@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Dégradé linéaire du haut absolu (#a600ff) au bas absolu (#00f0ff) -->
+    <linearGradient id="codeGrad" gradientUnits="userSpaceOnUse" x1="0" y1="40" x2="0" y2="472">
+      <stop offset="0%" stop-color="#a600ff" />
+      <stop offset="100%" stop-color="#00f0ff" />
+    </linearGradient>
+  </defs>
+
+  <!-- Barre Supérieure -->
+  <rect x="40" y="40" width="432" height="44" rx="22" fill="url(#codeGrad)" />
+  
+  <!-- Barre Inférieure -->
+  <rect x="40" y="428" width="432" height="44" rx="22" fill="url(#codeGrad)" />
+  
+  <!-- Barre Milieu Haut (Droite) -->
+  <rect x="270" y="170" width="202" height="44" rx="22" fill="url(#codeGrad)" />
+  
+  <!-- Barre Milieu Bas (Droite) -->
+  <rect x="270" y="298" width="202" height="44" rx="22" fill="url(#codeGrad)" />
+  
+  <!-- Symbole Code </> Aéré à Gauche -->
+  <!-- Chevron Gauche < -->
+  <path d="M 80 226 L 46 256 L 80 286" stroke="url(#codeGrad)" stroke-width="24" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+  
+  <!-- Slash / -->
+  <line x1="126" y1="208" x2="102" y2="304" stroke="url(#codeGrad)" stroke-width="24" stroke-linecap="round" />
+  
+  <!-- Chevron Droit > -->
+  <path d="M 148 226 L 182 256 L 148 286" stroke="url(#codeGrad)" stroke-width="24" stroke-linecap="round" stroke-linejoin="round" fill="none" />
+</svg>
