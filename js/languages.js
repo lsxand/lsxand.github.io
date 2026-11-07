@@ -60,7 +60,7 @@ let _nav_about = "About/";
 let _nav_projects = "Projects/";
 let _nav_path = "Path/";
 let _nav_skills = "Skills/";
-let _h1 = "Developper <br> Full-Stack";
+let _h1 = "Engineer <br> DevOps/Cloud | IA";
 let _intro_paragraph = "I like discover new things, new technology and <span class='green'>challenge myself</span>. II am invested in my work and love teamwork. Currently studying computer science and soon to be a student at Epitech, looking for a job that would allow me to finance my studies while developing my professional experience. Versatile, <span class='green'>motivated</span> and highly <span class='green'>adaptable profile</span>.</p>";
 let _contact_btn_paragraph = "If you have a project, don't hesitate to <a href='#contact' class='cyan neon-cyan  contact-btn' id='contact-me-btn'>contact_me</a>";
 let _contact_btn = "Contact_me";
@@ -130,14 +130,13 @@ function changeLanguage(flag) {
     h1.innerHTML = _h1;
     _h1 = h1_;
 
-    const nav_home_ = home.getHTML();
+    const nav_home_ = nav_home.getHTML();
     nav_home.innerHTML = _nav_home;
     _nav_home = nav_home_;
 
     const nav_about_ = nav_about.getHTML();
     nav_about.innerHTML = _nav_about;
     _nav_about = nav_about_;
-
 
     const nav_projects_ = nav_projects.getHTML();
     nav_projects.innerHTML = _nav_projects;
