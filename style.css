@@ -385,11 +385,25 @@ nav a.home {
 }
 
 .alternance-card {
-    border: 1px dashed var(--white);
+    border: 1px solid var(--cyan-transparent);
+    border-radius: 5px;
     margin: 1rem 0 1rem 0;
     padding: 0 0.5rem 0 0.5rem;
+    span {
+        font-size: medium;
+    }
+    p {
+        color: var(--white);
+    }
+}
+.alternance-duration {
+    font-size: 2rem;
 }
 
+.alternance-status {
+    border: 1px solid var(--cyan-transparent);
+    width: 100%;
+}
 /*  ################# SECTION ABOUT ################## */
 
 #about {
